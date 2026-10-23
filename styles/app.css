@@ -1,0 +1,223 @@
+/* Main app styling */
+.stApp {
+    background-color: #FEBC11 !important;
+}
+
+/* Sidebar base styling */
+section[data-testid="stSidebar"] {
+    background-color: #003660 !important;
+}
+
+/* Sidebar text hierarchy */
+section[data-testid="stSidebar"] {
+    color: white !important;
+}
+
+section[data-testid="stSidebar"] h1,
+section[data-testid="stSidebar"] h2,
+section[data-testid="stSidebar"] h3,
+section[data-testid="stSidebar"] h4 {
+    color: #FEBC11 !important;
+    font-weight: bold !important;
+}
+
+/* Main content area */
+.main .block-container {
+    background-color: rgba(255, 255, 255, 0.95) !important;
+    border-radius: 15px;
+    padding: 2rem !important;
+    margin-top: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Headers */
+.main-header {
+    font-size: 2.5rem;
+    color: #003660;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.sub-header {
+    font-size: 1.2rem;
+    color: #003660;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-weight: 500;
+}
+
+/* Alert messages */
+.stAlert {
+    background-color: rgba(255, 255, 255, 0.95) !important;
+    border-radius: 10px !important;
+    border: 2px solid #003660 !important;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important;
+}
+
+.stSuccess {
+    background-color: rgba(212, 237, 218, 0.98) !important;
+    color: #155724 !important;
+    border: 2px solid #28a745 !important;
+    font-weight: 600 !important;
+}
+
+.stInfo {
+    background-color: rgba(179, 205, 224, 0.98) !important;
+    color: #003660 !important;
+    border: 2px solid #003660 !important;
+    font-weight: 600 !important;
+}
+
+.stError {
+    background-color: rgba(248, 215, 218, 0.98) !important;
+    color: #721c24 !important;
+    border: 2px solid #dc3545 !important;
+    font-weight: 600 !important;
+}
+
+.stWarning {
+    background-color: rgba(255, 243, 205, 0.98) !important;
+    color: #856404 !important;
+    border: 2px solid #ffc107 !important;
+    font-weight: 600 !important;
+}
+
+/* Source items */
+.source-item {
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 0.75rem;
+    margin: 0.3rem 0;
+    border-radius: 8px;
+    border-left: 4px solid #FEBC11;
+    border: 1px solid rgba(0, 54, 96, 0.2);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Chat input */
+.stChatInput > div {
+    background-color: rgba(255, 255, 255, 0.98) !important;
+    border: 2px solid #003660 !important;
+    border-radius: 25px !important;
+}
+
+.stChatInput input {
+    color: #003660 !important;
+    font-weight: 500 !important;
+}
+
+/* Sidebar expanders */
+section[data-testid="stSidebar"] .streamlit-expanderHeader,
+section[data-testid="stSidebar"] div[data-testid="stExpander"] summary {
+    background-color: #FEBC11 !important;
+    color: #003660 !important;
+    border: 2px solid #FEBC11 !important;
+    border-radius: 8px !important;
+    font-weight: 600 !important;
+    transition: all 0.3s ease !important;
+    margin: 0.5rem 0 !important;
+    padding: 0.75rem 1rem !important;
+    text-align: center !important;
+}
+
+section[data-testid="stSidebar"] .streamlit-expanderHeader:hover,
+section[data-testid="stSidebar"] div[data-testid="stExpander"] summary:hover {
+    background-color: white !important;
+    color: #003660 !important;
+    border-color: white !important;
+    transform: translateY(-1px) !important;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.3) !important;
+}
+
+section[data-testid="stSidebar"] .streamlit-expanderContent,
+section[data-testid="stSidebar"] div[data-testid="stExpander"] div[role="region"] {
+    background-color: rgba(0, 54, 96, 0.95) !important;
+    color: white !important;
+    border: 2px solid #FEBC11 !important;
+    border-top: none !important;
+    border-radius: 0 0 8px 8px !important;
+    padding: 1rem !important;
+    margin-top: -2px !important;
+}
+
+/* Sidebar buttons */
+section[data-testid="stSidebar"] .stButton > button,
+section[data-testid="stSidebar"] button,
+section[data-testid="stSidebar"] .stDownloadButton > button {
+    background-color: #FEBC11 !important;
+    color: #003660 !important;
+    border: 2px solid #FEBC11 !important;
+    font-weight: 600 !important;
+    border-radius: 8px !important;
+    transition: all 0.3s ease !important;
+    margin: 0.25rem 0 !important;
+    padding: 0.75rem 1rem !important;
+    width: 100% !important;
+    min-height: 48px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+section[data-testid="stSidebar"] .stButton > button:hover,
+section[data-testid="stSidebar"] button:hover,
+section[data-testid="stSidebar"] .stDownloadButton > button:hover {
+    background-color: white !important;
+    border-color: white !important;
+    transform: translateY(-1px) !important;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.3) !important;
+}
+
+/* Main content buttons */
+.stButton > button {
+    background-color: rgba(255, 255, 255, 0.95);
+    border: 2px solid #003660;
+    color: #003660;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.stButton > button:hover {
+    background-color: #003660;
+    color: #FEBC11;
+    border-color: #003660;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Metrics */
+.stMetric {
+    background-color: rgba(255, 255, 255, 0.9) !important;
+    padding: 1rem !important;
+    border-radius: 10px !important;
+    border: 1px solid rgba(0, 54, 96, 0.2) !important;
+}
+
+.stMetric label {
+    color: #003660 !important;
+    font-weight: 600 !important;
+}
+
+.stMetric div[data-testid="metric-container"] > div {
+    color: #003660 !important;
+    font-weight: bold !important;
+}
+
+/* Specific targeted styles */
+section[data-testid="stSidebar"] div.st-emotion-cache-1xafbf1.e1g8wfdw0 p {
+    color: #155724 !important;
+}
+
+section[data-testid="stSidebar"] div[data-testid="stExpander"] .stMarkdown p:first-of-type {
+    color: white !important;
+}
+
+section[data-testid="stSidebar"] div[data-testid="stExpander"] .stMarkdown strong {
+    color: white !important;
+}
+
+section[data-testid="stSidebar"] div.st-emotion-cache-1xafbf1.e1g8wfdw0 p {
+    color: #155724 !important;
+}

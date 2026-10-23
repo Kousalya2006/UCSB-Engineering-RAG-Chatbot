@@ -1,0 +1,129 @@
+{
+  "status": "failed",
+  "total_passed": 12,
+  "total_tests": 14,
+  "detailed_results": {
+    "prerequisite_check": true,
+    "embedding_quality": {
+      "test_type": "embedding_quality",
+      "results": [
+        {
+          "query1": "computer science courses",
+          "query2": "CS classes available",
+          "similarity": 0.8192264961498654,
+          "expected": "similar",
+          "passed": true
+        },
+        {
+          "query1": "mechanical engineering program",
+          "query2": "ME department overview",
+          "similarity": 0.6977940711107774,
+          "expected": "similar",
+          "passed": false
+        },
+        {
+          "query1": "computer science courses",
+          "query2": "mechanical engineering program",
+          "similarity": 0.682564254321086,
+          "expected": "dissimilar",
+          "passed": false
+        }
+      ]
+    },
+    "retrieval_accuracy": {
+      "test_type": "retrieval_accuracy",
+      "results": [
+        {
+          "query": "CS 162 operating systems",
+          "expected_type": "course",
+          "expected_dept": "Computer Science",
+          "actual_type": "course",
+          "actual_dept": "Computer Science",
+          "passed": true
+        },
+        {
+          "query": "mechanical engineering program requirements",
+          "expected_type": "program",
+          "expected_dept": "Mechanical Engineering",
+          "actual_type": "course",
+          "actual_dept": "Mechanical Engineering",
+          "passed": true
+        },
+        {
+          "query": "electrical engineering department",
+          "expected_type": "department",
+          "expected_dept": "Electrical and Computer Engineering",
+          "actual_type": "department",
+          "actual_dept": "Electrical & Computer Engineering",
+          "passed": true
+        }
+      ]
+    },
+    "response_generation": {
+      "test_type": "response_generation",
+      "results": [
+        {
+          "query": "What computer science courses are available?",
+          "response": "Based on the provided information, UCSB's Computer Science department offers at least two courses:\n\n* **CMPSC 40 - Foundations of Computer Science (5 units):** This course covers theoretical computer science topics like logic, set theory, functions, and recursion.  Prerequisites include a C or better in CMPSC 16 and MATH 4A.\n\n* **CMPSC 190N - Special Topics in Computer Science: General (4 units):** This course explores various current topics within computer science, categorized into several areas (Foundations, Software Systems, etc.).  The prerequisite is instructor consent.\n\n\nThis is not an exhaustive list.  The department likely offers many other courses.  For a complete listing of available computer science courses, I recommend checking the official UCSB Computer Science department website or the online course catalog.  You can also consult the academic advisor for the Computer Science department for the most up-to-date and comprehensive information.\n",
+          "quality_score": 1.0,
+          "passed": true
+        },
+        {
+          "query": "Tell me about the mechanical engineering program",
+          "response": "The UCSB Department of Mechanical Engineering offers a comprehensive program spanning undergraduate and graduate levels.\n\n**Undergraduate Program (BSME):**  This program focuses on the fundamentals of mechanical engineering, equipping you with skills in design, analysis, and manufacturing of mechanical systems.  You'll cover core topics like mechanics, structures, fluid dynamics, thermodynamics, and control systems through lectures and hands-on projects.  The program is designed to prepare you for a wide range of careers in diverse industries.  You can find the detailed curriculum and requirements on the official program page: [https://catalog.ucsb.edu/programs/BSME](https://catalog.ucsb.edu/programs/BSME)\n\n\n**Graduate Programs (MSME & PHDME):**  These programs delve deeper into specialized areas within mechanical engineering.  The curriculum includes advanced coursework and research opportunities in areas such as robotics, micro-machines, machine learning, and dynamical systems and control.  Both programs are ideal for students seeking careers in academia, government labs, or industry, with the PhD program specifically designed for those interested in research and teaching. You can find more information about the MSME program here: [https://catalog.ucsb.edu/programs/MSME](https://catalog.ucsb.edu/programs/MSME) and the PHDME program here: [https://catalog.ucsb.edu/programs/PHDME](https://catalog.ucsb.edu/programs/PHDME).\n\n\n**Introductory Course (ME 95):**  ME 95, Introduction to Mechanical Engineering, offers a hands-on experience through laboratory or machine shop projects.  Note that this course requires instructor consent.\n\n\nRemember to always verify this information with the official UCSB Mechanical Engineering department website and the general university catalog for the most up-to-date details on curriculum, prerequisites, and admission requirements.  I am an academic assistant and my knowledge is based on the provided text; I am not a substitute for official university sources.\n",
+          "quality_score": 0.7,
+          "passed": true
+        },
+        {
+          "query": "What are the prerequisites for ECE courses?",
+          "response": "The prerequisite requirements for the UCSB Electrical & Computer Engineering (ECE) courses you listed vary considerably.  It's crucial to check the official UCSB course catalog for the most up-to-date information before making any academic plans.  Here's a summary based on the provided information:\n\n* **ECE 134 (Introduction to Fields and Waves):**  Requires Physics 3 or 23 or 7B & Physics 4 or 24 or 7C (minimum C- in each physics course); Mathematics 4B or 4BI or 5A & Mathematics 5B or 6A or 6AI & Mathematics 5C or 6B (minimum C- in each math course).  Open to EE and Computer Engineering majors only.  This course has a significant math and physics foundation requirement.\n\n* **ECE 5 (Introduction to Electrical & Computer Engineering):** Open only to Electrical Engineering and Computer Engineering majors. No other prerequisites are listed.\n\n* **ECE 238 (Advanced Control Design Laboratory):** Requires ME 243A/ECE 230A and at least one of the following: ME 243B/ECE 230B, ME 236/ECE 236, ME 256/ECE 232, or ME 254/ECE 271C.  This course is clearly for students who have already taken several advanced courses in related areas.\n\n* **ECE 141A (Introduction to Nanoelectromechanical and Microelectromechanical Systems):** Requires either ME 16 & 17, ME 152A, ME 151A (ME 151A may be concurrent) OR ECE 130A and 137A (minimum C- in both). This shows alternative pathways based on your prior coursework in Mechanical Engineering or ECE.\n\n* **ECE 10A (Foundations of Analog and Digital Circuits & Systems):** Requires Mathematics 2A-B or 3A-B or 3AH-BH, and Mathematics 4A or 4AI or 3C (minimum C in each); Math 4B or 4BI or 5A (minimum C, may be concurrent); Physics 3, 7B or 23 (may be concurrent). Open only to Electrical Engineering and Computer Engineering majors.  This course has a significant math and physics foundation.\n\n\nRemember, these are just the prerequisites listed.  There may be other course recommendations or suggested preparation.  Always consult the official UCSB course catalog and your academic advisor for the most accurate and complete information.\n",
+          "quality_score": 0.7,
+          "passed": true
+        },
+        {
+          "query": "How many units is a typical engineering course?",
+          "response": "Based on the provided course descriptions, a typical engineering course at UCSB's College of Engineering is 3.0 units.  However, this is not necessarily representative of *all* engineering courses.  To get a complete picture of unit counts for all engineering courses, I recommend checking the official UCSB course catalog.\n",
+          "quality_score": 1.0,
+          "passed": true
+        }
+      ]
+    },
+    "end_to_end": {
+      "test_type": "end_to_end",
+      "results": [
+        {
+          "query": "What CS courses should I take for machine learning?",
+          "response_length": 817,
+          "sources_count": 5,
+          "success": true,
+          "quality_score": 1.0,
+          "passed": true
+        },
+        {
+          "query": "Is there a computer engineering program at UCSB?",
+          "response_length": 835,
+          "sources_count": 5,
+          "success": true,
+          "quality_score": 1.0,
+          "passed": true
+        },
+        {
+          "query": "What are the requirements for the Materials department?",
+          "response_length": 1717,
+          "sources_count": 5,
+          "success": true,
+          "quality_score": 1.0,
+          "passed": true
+        },
+        {
+          "query": "Show me electrical engineering courses about circuits",
+          "response_length": 1792,
+          "sources_count": 5,
+          "success": true,
+          "quality_score": 1.0,
+          "passed": true
+        }
+      ]
+    }
+  }
+}

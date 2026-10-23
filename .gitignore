@@ -1,0 +1,49 @@
+# Virtual environment
+.venv/
+venv/
+env/
+Include/
+Lib/
+
+# Environment variables
+.env
+.env.local
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Windows OS files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Windows executable files
+*.exe
+*.msi
+
+# Log files
+*.log
+
+# Database files
+*.db
+*.sqlite3
+
+# Temporary files
+*.tmp
+*.temp
+~*
+
+# Data and embeddings
+/data
+embeddings/
+node_modules/
